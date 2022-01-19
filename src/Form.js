@@ -1,5 +1,8 @@
 import React , {Component} from 'react';
 
+// [TODO]: Changer ce component en Functional Component
+// utilisant react hooks
+
 class TouDoumList extends Component{
     constructor() {
         super();
