@@ -1,6 +1,14 @@
 body{
     background-color: red;
+    margin: 0;
 }
+
+header{
+    border: 19px solid black;
+    margin-top: 10px;
+}
+
+
 
 h1{
     margin-bottom: 3cm;

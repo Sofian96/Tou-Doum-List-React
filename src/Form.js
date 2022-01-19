@@ -40,26 +40,26 @@ class TouDoumList extends Component{
             return (
                 <div className='list-group-item' key={item}>
                     {item} | <button onClick={this.deleteTouDoum.bind(this, item)}> X </button>
+                    {item} | <button onClick={this.changeTouDoum.bind(this, item)}>Edit</button>
                 </div>
             )
         })
     }
 
-render(){
-    return (
-        <div className='form'>
-            <form className='form-row'>
-                <input className='form-control mb-2' type='text' placeholder='Notez votre envie de film pour ne pas la perdre!' value={this.state.userInput} onChange={this.onChange.bind(this)}></input>
-                <button className='btn btn-danger' onClick={this.addTouDoum.bind(this)} type='submit'> Noté! </button>
-            </form>
+    render(){
+        return (
+            <div className='form'>
+                <form className='form-row'>
+                    <input className='form-control mb-2' type='text' placeholder='Notez votre envie de film pour ne pas la perdre!' value={this.state.userInput} onChange={this.onChange.bind(this)}></input>
+                    <button className='btn btn-danger' onClick={this.addTouDoum.bind(this)} type='submit'> Noté! </button>
+                </form>
 
-            <div className='list-group'>
-                {this.renderTouDoums()}
+                <div className='list-group'>
+                    {this.renderTouDoums()}
+                </div>
             </div>
-        </div>
 
-    )
-
-}
+        )
+    }
 }
 export default TouDoumList
