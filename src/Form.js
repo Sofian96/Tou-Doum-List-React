@@ -46,10 +46,10 @@ render(){
     return (
         <div className='form'>
             <form className='form-row'>
-                <input className='form-control mb-2' type='text' placeholder='Notez votre envie' value={this.state.userInput} onChange={this.onChange.bind(this)}></input>
+                <input className='form-control mb-2' type='text' placeholder='Notez votre envie de film pour ne pas la perdre!' value={this.state.userInput} onChange={this.onChange.bind(this)}></input>
                 <button className='btn btn-danger' onClick={this.addTouDoum.bind(this)} type='submit'> Noté! </button>
             </form>
-            <break></break>
+
             <div className='list-group'>
                 {this.renderTouDoums()}
             </div>
